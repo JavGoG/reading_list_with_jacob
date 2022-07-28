@@ -36,3 +36,11 @@ const handleButtonClick = function () {
   const list= document.querySelector('ul');
   list.reset()
 };
+
+const handleButtonClick = function () {
+  const list= document.querySelector('ul');
+  const books = document.querySelectorAll('li')
+  for (book of books) {
+    list.removeChild(book)
+  }
+};
